@@ -1,0 +1,14 @@
+data("airquality")
+names(airquality)
+
+(Q1 <- names(airquality))
+
+(Q2 <- subset(airquality, Month==6))
+
+(Q3 <- mean(airquality$Wind))
+
+(Q4 <- sd(airquality$Wind))
+
+qqnorm(airquality$Wind, main="Wind speed")
+qqline(airquality$Wind)
+
